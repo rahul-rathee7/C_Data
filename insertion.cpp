@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
 // hello world
+// this is a simple program
+
 
 int insertion(int arr[], int n, int key, int cap) {
 	if(n >= cap)
