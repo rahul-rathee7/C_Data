@@ -1,5 +1,4 @@
 #include<iostream>
-#include <ostream>
 #include<string>
 #include<fstream>
 
@@ -31,8 +30,13 @@ int main() {
     student s;
     s.func();
     s.show();
-    ofstream out("database.txt");
+    ofstream out("input_files.txt");
     out << s.name << endl << s.rollno << endl << s.course << endl << s.grades << endl;
+    out.close();
+    ifstream in("input_files.txt");
+    in >> s.name >> s.rollno >> s.course >> s.grades;
+    in.close();
+    cout << s.name << endl << s.rollno << endl << s.course << endl << s.grades << endl;
     out.close();
     return 0;
 }
