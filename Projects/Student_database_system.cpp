@@ -1,5 +1,8 @@
 #include<iostream>
+#include <ostream>
 #include<string>
+#include<fstream>
+
 using namespace std;
 
 class student {
@@ -28,5 +31,6 @@ int main() {
     student s;
     s.func();
     s.show();
+    cout << endl << endl << "name is " << s.name << endl << endl;
     return 0;
 }
