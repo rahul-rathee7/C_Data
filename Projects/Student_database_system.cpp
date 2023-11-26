@@ -31,6 +31,7 @@ int main() {
     student s;
     s.func();
     s.show();
-    cout << endl << endl << "name is " << s.name << endl << endl;
+    ofstream out("database.txt");
+    out << s.name << endl << s.rollno << endl;
     return 0;
 }
